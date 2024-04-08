@@ -1,81 +1,18 @@
 <!DOCTYPE html>
+
 <html>
-package main;
-
-import board.BoardController;
-import book.BookController;
-import faq.FaqController;
-import genre.GenreController;
-import member.MemberController;
-import notice.NoticeController;
-import orders.OrdersController;
-import qna.QnaController;
-import request.RequestController;
-import store.StoreController;
-
-public class MainMenu {
-
-	public static MemberController MC = new MemberController();
-	public static BookController BC = new BookController();
-	public static GenreController GC = new GenreController();
-	public static NoticeController NC = new NoticeController();
-	public static OrdersController OC = new OrdersController();
-	public static QnaController QC = new QnaController();
-	public static StoreController SC = new StoreController();
-	public static BoardController BDC = new BoardController();
-	public static FaqController FC = new FaqController();
-	public static RequestController RC = new RequestController();
-
-	public void mainMenu() throws Exception {
-
-		while (true) {
-			System.out.println("===== 영풍문고 =====");
-			System.out.println("1. 회원가입 ");
-			System.out.println("2. 로그인");
-			System.out.println("3. 도서 검색 ");
-			System.out.println("4. 공지사항");
-			System.out.println("5. QNA");
-			System.out.println("6. FAQ");
-			System.out.println("7. 도서요청 게시판");
-			System.out.println("8. 자유게시판");
-			System.out.println("9. 영업점 안내");
-			System.out.print("원하는 메뉴를 선택하세요 : ");
-			String num = Main.SC.nextLine();
-
-			switch (num) {
-			case "1":
-				MC.join();
-				break;
-			case "2":
-				MC.login();
-				break;
-			case "3":
-				BC.bookSearch();
-				break;
-			case "4":
-				NC.showNoticeMenu();
-				break;
-			case "5":
-				QC.showQnaMenu();
-				break;
-			case "6":
-				FC.faqShowMenu();
-				break;
-			case "7":
-				RC.bookRequest();
-				break;
-			case "8":
-				BDC.boardShowMenu();
-				break;
-			case "9":
-				SC.offStoreMenu();
-				break;
-			default:
-				System.out.println("잘못 입력하셨습니다.");
-
-			}
-		}
-	}
-}
-
+	
+<h1>===== 영풍문고 =====</h1>
+	
+<h2>회원가입</h2>
+	
+	<h2>로그인</h2>
+	<h2>도서 검색</h2>
+	<h2>공지사항</h2>
+	<h2>QNA</h2>
+	<h2>FAQ</h2>	
+	<h2>도서요청 게시판</h2>
+	<h2>자유게시판</h2>
+	<h2>영업점 안내</h2>
+	
 </html>
