@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-
-<html>
-
-<h1>게시판입니다.</h1>
-
-<a href="http://adsa77.github.io/">홈으로 돌아가기</a><br/><br/>
-
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판</title>
+    <link rel="stylesheet" href="https://adsa77.github.io/index.css">
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <h1><span>손지욱의 도서카페</span></h1>
+        </header>
+        <aside class="sidebar">
+            <table>
+                <tr>
+                    <td id="sidebarHover"><span><a href="https://adsa77.github.io/index.html">홈으로</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="https://adsa77.github.io/login.html">로그인</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="https://adsa77.github.io/intro.html">소개</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="https://adsa77.github.io/board.html">게시판</a></span></td>
+                </tr>
+                <tr>
+                    <td id="sidebarHover"><span><a href="https://adsa77.github.io/portal.html">유용한 사이트</a></span></td>
+                </tr>
+            </table>
+        </aside>
+        <section id="contents">
+            <h1>게시판</h1>
+        </section>
+    </div>
+    <footer id="footer">
+        <select onchange="location.href = this.value;">
+            <option>바로가기</option>
+            <option value="https://adsa77.github.io/index.html">홈으로</option>
+            <option value="https://adsa77.github.io/login.html">로그인</option>
+            <option value="https://adsa77.github.io/intro.html">소개</option>
+            <option value="https://adsa77.github.io/board.html">게시판</option>
+            <option value="https://adsa77.github.io/portal.html">유용한사이트</option>
+        </select>
+    </footer>
+      <br>
+      <br>
+      
+</body>
 </html>
